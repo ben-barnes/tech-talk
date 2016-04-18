@@ -39,8 +39,7 @@ object Stack {
     (c: Config) => Future {
       Thread.sleep(4000)
       if(c.x > 0) {
-        val result = Some(true)
-        (s"${c.x} is positive.\n", result)
+        (s"${c.x} is positive.\n", Some(true))
       }
       else {
         (s"${c.x} is negative!\n", None)
